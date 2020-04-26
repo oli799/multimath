@@ -1,6 +1,6 @@
 # Multimath 🤓
 
-Simple multiplayer math game written JS with socket.io
+Simple multiplayer math game written in JavaScript with socket.io
 
 ## Try it:
 
