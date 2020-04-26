@@ -1,0 +1,60 @@
+body {
+  background-color: #333436;
+  color: #efefef;
+}
+
+main {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hint {
+  transition: opacity 1s;
+}
+
+.leaderboardConatiner {
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 5px;
+  background-color: white;
+  color: #333436;
+  padding: 15px;
+  -webkit-box-shadow: inset 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: inset 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: inset 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
+}
+
+.leaderboardConatiner ul {
+  list-style: none;
+}
+
+.leaderboardConatiner li {
+  margin: 5px;
+}
+
+.leaderboardConatiner hr {
+  width: 80%;
+  margin: 5px auto;
+}
+
+.leaderboardConatiner h4 {
+  margin-bottom: 5px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}

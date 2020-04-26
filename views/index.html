@@ -1,0 +1,95 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Multimath</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <meta name="description" content="A cool thing made with Glitch" />
+    <link
+      id="favicon"
+      rel="icon"
+      href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/237/nerd-face_1f913.png"
+      type="image/x-icon"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <!-- import the webpage's stylesheet -->
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"
+      defer
+    ></script>
+    <!-- import the webpage's client-side javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <div class="intro">
+        <div class="title">
+          <h1>
+            Welcome to <span style="color: rgb(46,182,236)">multimath🤓</span>
+          </h1>
+        </div>
+        <form id="introForm">
+          <label for="name">Type your name to join!</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            class="u-full-width"
+            placeholder="Your name..."
+          />
+          <button type="submit" class="button-primary u-full-width">
+            Join 🏁
+          </button>
+        </form>
+      </div>
+      <div class="game">
+        <div class="title">
+          <h1>Answer <span style="color: rgb(46,182,236)">quick</span> ✍️</h1>
+        </div>
+        <form id="gameForm">
+          <h2 for="answer" class="question"></h2>
+          <input
+            type="number"
+            id="answer"
+            name="answer"
+            class="u-full-width"
+            placeholder="Your answer..."
+          />
+          <button type="submit" class="button-primary u-full-width">
+            submit 🤞
+          </button>
+        </form>
+        <p class="hint">
+          <i>Tipp:</i> Hitting just
+          <span style="color: rgb(46,182,236)">enter/return</span> will be mutch
+          faster 👊
+        </p>
+        <div class="leaderboardConatiner">
+          <h4><b>Leaderborad</b></h4>
+          <hr />
+          <ul class="leaderboard"></ul>
+        </div>
+      </div>
+    </main>
+    <div class="footer">
+      Created by
+      <i
+        ><a href="https://www.facebook.com/oliver.reider?ref=bookmarks"
+          >Olivér Reider</a
+        ></i
+      >
+    </div>
+  </body>
+</html>
